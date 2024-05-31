@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 //add in UI package in Unity Engine for Step 3.
 
 public class Collectable : MonoBehaviour
@@ -27,14 +29,17 @@ public class Collectable : MonoBehaviour
   */
     public AudioClip krabbyPattySound;
     public AudioSource krabbyPattyEatingSound;
-    public float krabbyPattyEatingSpeed;
+    // public float krabbyPattyEatingSpeed;
     public GameObject krabbyPatty;
     public TextMeshPro krabbyPattyEatingText;
+    public int collectableCounter = 0;
+    public TextMeshPro collectableCounterText;
 
     private void Start()
     {
         krabbyPattyEatingSound = gameObject.GetComponent<AudioSource>();
         krabbyPattyEatingSound.clip = krabbyPattySound;
+        UpdateCollectableCounter();
     }
 
     private void Update()
@@ -46,12 +51,21 @@ public class Collectable : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            collectableCounter++; // Add it by 1 for each collectable that is picked up.
+            UpdateCollectableCounter();
             krabbyPattyEatingSound.Play();
             Destroy (gameObject, krabbyPattySound.length);
+        }
+    }
+    private void UpdateCollectableCounter()
+    {
+        if (collectableCounterText != null)
+        {
+           collectableCounterText.text = "Patties" + collectableCounter;
         }
     }
 }
