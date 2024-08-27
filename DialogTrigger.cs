@@ -24,20 +24,20 @@ public class DialogTrigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Set dialog panel to the correct NPC model.
+            // Set each dialog panel to the correct NPC model.
 
             dialogPanel.SetActive(true);
             if (currentNPC.CompareTag("SpongeBob SquarePants"))
             {
-                spongeBobText.gameObject.SetActive(true); // Set to false if you do not want the text to appear.
+                spongeBobText.gameObject.SetActive(true); // Set this to false in the Unity editor if you do not want the text to appear.
             }
             if (currentNPC.CompareTag("Squidward"))
             {
-                squidwardText.gameObject.SetActive(true); // Set to false if you do not want the text to appear.
+                squidwardText.gameObject.SetActive(true); // Set this to false in the Unity editor if you do not want the text to appear.
             }
             if (currentNPC.CompareTag("Patrick Star"))
             {
-                patrickStarText.gameObject.SetActive(true); // Set to false if you do not want the text to appear.
+                patrickStarText.gameObject.SetActive(true); // Set this to false in the Unity editor if you do not want the text to appear.
             }
         }
     }
