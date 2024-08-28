@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,27 +15,20 @@ public class CollectItems : MonoBehaviour
     void Start()
     {
         coinAudioSource = gameObject.GetComponent<AudioSource>();
+        coinAudioSource.clip = coinAudio;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            coinCounter++; // Increment coin counter by 1 per every coin that is picked up by the player.
-            UpdateCoinCounter();
+            Debug.Log("Coin Sound"); // Test coin sound.
             coinAudioSource.Play();
-        }
-    }
-    private void UpdateCoinCounter()
-    {
-        if (coinCounter == 0)
-        {
-            coinAudioSource.Play(); // Stop playing after the final coin is collected.
+            Destroy (gameObject, coinAudio.length); // Will remove a delay when collecting the item.
         }
     }
 }
