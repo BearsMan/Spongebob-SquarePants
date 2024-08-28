@@ -26,7 +26,6 @@ public class CollectItems : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Coin Sound"); // Test coin sound.
             coinAudioSource.Play();
             Destroy (gameObject, coinAudio.length); // Will remove a delay when collecting the item.
         }
