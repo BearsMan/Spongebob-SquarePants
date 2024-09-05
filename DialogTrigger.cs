@@ -9,14 +9,32 @@ public class DialogTrigger : MonoBehaviour
     public GameObject currentNPC;
     public TextMeshProUGUI spongeBobText;
     public TextMeshProUGUI squidwardText;
-    public TextMeshProUGUI patrickStarText; 
+    public TextMeshProUGUI patrickStarText;
+    public TextMeshProUGUI garyTheSnailText;
+    public TextMeshProUGUI sandyCheeksText;
+    public TextMeshProUGUI mrKrabsText;
+    public TextMeshProUGUI pearlText;
+    public TextMeshProUGUI planktonText;
+    public TextMeshProUGUI karenTheComputerWifeText;
+    public TextMeshProUGUI mrsPuffText;
+    public TextMeshProUGUI larryTheLobsterText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Creates the start of each dialog text per character.
+
         dialogPanel.SetActive(false);
         spongeBobText.gameObject.SetActive(false);
         squidwardText.gameObject.SetActive(false);
-        patrickStarText.gameObject.SetActive(false);
+        // patrickStarText.gameObject.SetActive(false);
+        // garyTheSnailText.gameObject.SetActive(false);
+        // sandyCheeksText.gameObject.SetActive(false);
+        // mrKrabsText.gameObject.SetActive(false);
+        // pearlText.gameObject.SetActive(false);
+        // planktonText.gameObject.SetActive(false);
+        // karenTheComputerWifeText.gameObject.SetActive(false);
+        // mrsPuffText.gameObject.SetActive(false);
+        // larryTheLobsterText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
