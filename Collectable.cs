@@ -29,7 +29,7 @@ public class Collectable : MonoBehaviour
   */
     public AudioClip krabbyPattySound;
     public AudioSource krabbyPattyEatingSound;
-    // public float krabbyPattyEatingSpeed;
+    public float krabbyPattyEatingSpeed;
     public GameObject krabbyPatty;
     public TextMeshPro krabbyPattyEatingText;
     public int collectableCounter = 0;
@@ -40,16 +40,6 @@ public class Collectable : MonoBehaviour
         krabbyPattyEatingSound = gameObject.GetComponent<AudioSource>();
         krabbyPattyEatingSound.clip = krabbyPattySound;
         UpdateCollectableCounter();
-    }
-
-    private void Update()
-    {
-        
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
     void OnTriggerEnter(Collider other)
     {
