@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class SpawnPoint : MonoBehaviour
 {
     public string sceneName;
-    // Start is called before the first frame update
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         

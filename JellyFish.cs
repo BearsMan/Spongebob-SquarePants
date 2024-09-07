@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class JellyFish : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         

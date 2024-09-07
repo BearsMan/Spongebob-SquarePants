@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
     public Animator characterAnim;
     public Rigidbody body;
     public bool isMoving = false; // This checks to see if the character is moving.
-    // Start is called before the first frame update
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody>();

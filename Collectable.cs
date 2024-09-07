@@ -32,7 +32,7 @@ public class Collectable : MonoBehaviour
     public TextMeshPro krabbyPattyEatingText;
     public int collectableCounter = 0;
     public TextMeshPro collectableCounterText;
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         krabbyPattyEatingSound = gameObject.GetComponent<AudioSource>();
