@@ -16,6 +16,11 @@ public class DialogTrigger : MonoBehaviour
     public TextMeshProUGUI karenTheComputerWifeText;
     public TextMeshProUGUI mrsPuffText;
     public TextMeshProUGUI larryTheLobsterText;
+    public TextMeshProUGUI fishAText;
+    public TextMeshProUGUI fishBText;
+    public TextMeshProUGUI fishCText;
+    public TextMeshProUGUI fishDText;
+    public TextMeshProUGUI fishEText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,8 +38,12 @@ public class DialogTrigger : MonoBehaviour
         // karenTheComputerWifeText.gameObject.SetActive(false);
         // mrsPuffText.gameObject.SetActive(false);
         // larryTheLobsterText.gameObject.SetActive(false);
+        // fishAText.gameObject.SetActive(false);
+        // fishBText.gameObject.SetActive(false);
+        // fishCText.gameObject.SetActive(false);
+        // fishDText.gameObject.SetActive(false);
+        // fishEText.gameObject.SetActive(false);
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -74,4 +83,7 @@ public class DialogTrigger : MonoBehaviour
             patrickStarText.gameObject.SetActive(true);
         }
     }
+    // README! This code and other game projects will now be done as a hobby because I may no longer be taking game design classes and other class types.
+
+    // PLEASE DO NOT ATTEMPT TO CODE THIS GAME OR ANY OTHER GAME PROJECTS, UNLESS YOU ARE DOING IT FOR FUN!
 }
