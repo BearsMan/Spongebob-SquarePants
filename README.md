@@ -1,14 +1,5 @@
 # Spongebob-SquarePants
 
-Cast & crew
-User reviews
-Trivia
-FAQ
-IMDbPro
-SpongeBob SquarePants
-Plot
-SpongeBob SquarePants
-Summaries
 The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.
 The character-driven cartoon chronicles the nautical and often nonsensical adventures of SpongeBob, an incurably optimistic and earnest sea sponge, and his underwater friends. Dwelling a few fathoms beneath the tropical isle of Bikini Atoll in the sub-surface city of Bikini Bottom, SpongeBob lives in a two-story pineapple. Instead of taking the logical approach to everyday challenges, SpongeBob approaches life in a wayward and unconventional way. Whether searching for the ultimate spatula to perfect his burger flipping technique at the Krusty Krab or just hanging out with his best friend Patrick (an amiable starfish), SpongeBob's good intentions and overzealous approach to life usually create chaos in his underwater world.
 —Nickelodeon
