@@ -83,7 +83,4 @@ public class DialogTrigger : MonoBehaviour
             patrickStarText.gameObject.SetActive(true);
         }
     }
-    // README! This code and other game projects will now be done as a hobby because I may no longer be taking game design classes and other class types.
-
-    // PLEASE DO NOT ATTEMPT TO CODE THIS GAME OR ANY OTHER GAME PROJECTS, UNLESS YOU ARE DOING IT FOR FUN!
 }
